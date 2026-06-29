@@ -1,37 +1,35 @@
-# Fraud Detection & Risk Scoring System
+# Internship Program Analysis
 
 ## Overview
-A fraud detection pipeline that analyzes 51,000 real transaction records, 
-calculates a risk score for each one, and flags high-risk transactions 
-using statistical outlier detection (Z-score method).
+An analysis of 8,500+ internship records to identify completion and dropout 
+trends, using Python and Pandas to clean, process, and analyze real program data.
 
 ## The Problem
-Manually reviewing thousands of transactions for fraud is slow and error-prone. 
-This project automates the process — scoring every transaction and surfacing 
-the ones most likely to be fraudulent, so analysts can focus their attention 
-where it matters most.
+Internship programs often have unclear dropout patterns — without analysis, 
+it's hard to know who's at risk of dropping out or what factors drive completion. 
+This project digs into the data to find those patterns.
 
 ## What It Does
-- Cleans and processes 51,000 transaction records
-- Calculates a fraud risk score per transaction
-- Detects statistical outliers using Z-score analysis
-- Ranks and outputs the top high-risk transactions for review
+- Cleans and processes 8,500+ internship records
+- Identifies completion vs. dropout trends across the program
+- (Add: any specific factors you analyzed — e.g. by department, duration, 
+  performance score, etc.)
 
 ## Tech Stack
-Python · Pandas · NumPy · (add Matplotlib/Seaborn if you used them for charts)
+Python · Pandas · (add Matplotlib/Seaborn if you used them for charts)
 
 ## Sample Output
-<img width="985" height="683" alt="image" src="https://github.com/user-attachments/assets/b85a9a23-d050-47fb-bf83-2df0f73565a2" />
+<img width="1032" height="716" alt="image" src="https://github.com/user-attachments/assets/3574277e-944d-4a09-8066-d2a8d7f74dba" />
 
 
 ## Files
-- `projectBDA.ipynb` — full analysis notebook
-- `Fraud Detection Dataset.csv` — input data
-- `fraud_detection_output.csv` — risk-scored output
+- `internship_analysis (1).ipynb` — full analysis notebook
+- `data.csv` — input data
 
 ## Key Insight
-- 48,490 normal transactions vs 2,510 fraud (only 4.9% fraud — class imbalance)
-- Fraudulent transactions had a slightly higher average amount (3088 vs 2966)
-- Online Purchase and Bill Payment had the most fraud cases
-- Mobile devices were used most in fraud
-- UPI had the highest fraud count among payment methods
+→ Task Completion Rate — 30%
+→ Quality Score — 25%
+→ Mentor Feedback — 25%
+→ Punctuality — 20%
+
+Every intern gets a Performance Score out of 100 and a label. Excellent, Good, Average, or Needs Improvement.
